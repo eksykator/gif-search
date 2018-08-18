@@ -1,9 +1,16 @@
 var Gif = React.createClass( {
+	propTypes: {
+		sourceUrl: React.PropTypes.string,
+		url: React.PropTypes.string
+	},
+
 	render: function() {
 		return (
-			<div>
-				GIF
-			</div>
+			<a href={this.props.sourceUrl}>
+				<img
+				src={this.props.url}
+				/>
+			</a>
 		)
 	},
 });
