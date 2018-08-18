@@ -1,0 +1,11 @@
+{
+  "name": "gif-search",
+  "version": "1.0.0",
+  "scripts": {
+    "server": "http-server"
+  },
+
+  "devDependencies": {
+    "http-server": "0.11.1"
+  }
+}
