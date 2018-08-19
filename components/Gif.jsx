@@ -10,9 +10,7 @@ var Gif = React.createClass( {
 	render: function() {
 		return (
 			<a href={this.props.sourceUrl}>
-				<img
-				src={this.props.isLoading ? GIPHY_LOADING_URL : this.props.url}
-				/>
+				<img src={this.props.isLoading ? GIPHY_LOADING_URL : this.props.url} />
 			</a>
 		)
 	},

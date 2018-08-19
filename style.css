@@ -1,0 +1,16 @@
+body {
+	width: 600px;
+	margin: 20px auto;
+	font-family: 'Montserrat', sans-serif;
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
+	text-align: center;
+}
+
+input {
+	padding: 20px;
+	border: 2px solid #FF8100;
+	width: 200px;
+	display: block;
+	margin: 10px auto;
+}

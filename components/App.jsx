@@ -1,5 +1,3 @@
-
-
 var GIPHY_PUB_KEY = "BaLdsmYkdzzsGxqxtPJfMcFMBDam96S4";
 var GIPHY_API_URL = "http://api.giphy.com";
 
@@ -12,17 +10,20 @@ var App = React.createClass( {
 		}
 	},
 
-	handleKeyUp: function(a) {
-		if(a.length <= 2) {
+	handleKeyUp: function(text) {
+		if(text.length <= 2) {
 			return
 		}
-		console.log(a);
+		this.setState({
+			isLoading: true
+		});
+
 		var self = this; 
-		this.getGif(a, function(gif) {
-			console.log(gif);
+		this.getGif(text, function(gif) {
 			self.setState({
 				sourceUrl: gif.sourceUrl,
-				url: gif.url
+				url: gif.url,
+				isLoading: false
 			})
 		});
 	},
